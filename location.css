@@ -1,0 +1,75 @@
+@charset "utf-8";
+body {
+	position: relative;
+}
+#center {
+	background-color: transparent;
+	display: flex;
+	flex: 7;
+	position: relative;
+	z-index:3;
+}
+div.events {
+	display: block;
+	width: 100%;
+	background-color: rgba(238,169,40,.85);
+	width:75%;
+	height: 90%;
+	padding: 20px;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: .5px .5px 4px;
+	font-size: 1.5em;
+}
+b {
+	font-size: 1.6em;
+}
+.events img {
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+}
+h1 {
+	text-align: center;
+}
+#mapLink {
+	position: absolute;
+	display:inline-block;
+	background-color:rgba(238,169,40,.9);
+	bottom: 0%;
+	right: 0%;
+	z-index:100;
+	height: 42px;
+	width:146px;
+	padding: 4px;
+	border-radius:6px;
+	border: 3px solid rgba(174,0,1, .5);
+	box-shadow: 2px 1px 6px;
+}
+#mapLink a {
+	text-decoration: none;
+	color: black;
+}
+#mapLink:active {
+	background-color: rgb(220, 151,0);
+}
+#mapLink:hover {
+	background-color: rgba(250,181,52,.9);
+}
+p {
+	font-size:1.3em;
+	text-align:justify;
+	text-indent: 35px;
+}
+p#mosq {
+	font-size: 1.6em;
+}
+#tooBig {
+	max-width: 700px;
+}
+#tooBig2 {
+	display: block;
+	max-height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}

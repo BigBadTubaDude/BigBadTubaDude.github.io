@@ -1,0 +1,64 @@
+@charset "utf-8";
+html {
+	background: url("Zcity.png") center center no-repeat fixed;
+	background-size: cover;
+	position: relative;
+	height: 100%;
+}
+img#front-sketch {
+	transform: translate(-50%, -50%);
+	z-index:-1;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+}
+.welcome {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 10px;
+	width: 45%;
+	transform: translate(-50%, -50%);
+	background-color:rgb(238,169,17);
+	padding: 5px;
+	border: 5px solid rgb(174,0,1);
+}
+h1 {
+	width: 75%;
+	margin: auto;
+	text-align: center;
+}
+h2 {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+
+}
+
+#bike {
+	display: flex;
+	justify-content: flex-end;
+}
+a {
+	display:block;
+}
+#move, #still {
+	transform: scaleX(-1);
+	width: 30%;
+}
+.ride {
+	position: absolute;
+	display: flex;
+	left: 75%;
+	top: 55%;
+	justify-content: space-around;
+}
+#move {
+	visibility: hidden;
+}
+.welcome:hover ~ div > #still {
+	visibility: hidden;
+}
+.welcome:hover ~ div > #move {
+	visibility: visible;
+}

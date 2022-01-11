@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<link href="format.css" rel="stylesheet" />
+	<link href="feed_styles.css" rel="stylesheet" />
+	</head>
+	<body>
+	<!--TOP BANNER-->
+	<div id="banner">
+		<img src="serious_logo1.jpg" id="banner_image" />
+		<div id="banner_headings" >
+			<h1>	
+				"Hero for fun, guess I'll run"
+			</h1>
+			<h2>
+				Saitama for President
+			</h2>
+		</div>
+	</div>
+	<div id="body" >
+		<!--Navigation-->
+		<nav id="mainNav" class="sides">
+			<ul>
+				<li><span>To our front page</span><a href="new.html">Home</a></li>
+				<li><span>Event times and locations</span><a href="sched.html">Schedule</a></li>
+				<li><span>Who is Saitama?</span><a href="bio.html">Bio</a></li>
+				<li><span>Want to be a hero?</span><a href="feed.html">Apply</a></li>
+			</ul>
+		</nav>
+		<!--CENTER-->
+		<div id="center">
+		  <form id="survey"
+			action="http://www.example.com/redball/survey"
+			method="post" >
+			<div id="left">
+				<h1 class="feedHeads" id="info">Hero Information</h1>
+				<fieldset id="custInfo">	
+					<h1 class="join" >Join our new League!</h1>
+					<p>Want to fight  crime and help out with the campaign but don't want to join the League of Heros? Join Saitama's new New League of Heros! No writen exams will be tolerated.</p>
+					<div class="formRow">
+						<label for="name">Hero Name*</label>
+						<input
+							name="custName" 
+							id="name" 
+							type="text" 
+							placeholder="" 
+							required
+						/>
+					</div>
+					<div class="formRow">
+						<label for="city">Jurisdiction</label>
+						<input
+							name="custCity" 
+							id="city"
+							type="text"
+							list="cityList"
+							required
+						/>
+						<datalist id="cityList">
+							<option value="A-City" />
+							<option value="B-City" />
+							<option value="C-City" />
+							<option value="D-City" />
+							<option value="E-City" />
+							<option value="F-City" />
+							<option value="G-City" />
+							<option value="H-City" />
+							<option value="I-City" />
+							<option value="J-City" />
+							<option value="K-City" />
+							<option value="L-City" />
+							<option value="M-City" />
+							<option value="N-City" />
+							<option value="O-City" />
+							<option value="P-City" />
+							<option value="Q-City" />
+							<option value="R-City" />
+							<option value="S-City" />
+							<option value="T-City" />
+							<option value="U-City" />
+							<option value="V-City" />
+							<option value="W-City" />
+							<option value="X-City" />
+							<option value="Y-City" />
+							<option value="Z-City" />
+						</datalist>
+					</div>
+					<div class="formRow">
+						<label for="ageBox">Age</label>
+						<input
+							name="age" 
+							id="ageBox"
+							type="text" 
+						/>
+					</div>
+					<div class="formRow">
+						<label for="specBox">Species</label>
+						<input
+							name="Species" 
+							id="specBox"
+							type="text" 
+						/>
+					</div>
+					<div class="formRow">
+						<label for="phoneBox">Phone*</label>
+						<input
+							name="phone"
+							id="phoneBox"
+							type="tel"
+							placeholder="### ###-####"
+							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+							required
+							
+						/>
+					</div>
+					<div class="formRow">
+						<label for="mail">E-mail*</label>
+						<input 
+							name="custEmail"
+							id="mail"
+							type="email"
+							placeholder="OPM123@zcityheros.biz"
+							required
+						/>
+					</div>
+					<div class="formRow">
+						<label for="infoSrc">What are your skills?
+							<br />(select all that apply)
+						</label>
+						<select name="infoSrc" id="info" size="5" multiple>
+							<option value="internet">The power of flight</option>
+							<option value="mag">Telekinesis</option>
+							<option value="news">Super stregth</option>
+							<option value="word">Typing skills</option>
+							<option value="other">Other</option>					
+						</select>
+					</div>
+					
+
+				</fieldset>
+			</div>
+			<div id="right">
+				<h1 class="feedHeads" id="fee">Hero Fee Payment</h1>
+				<fieldset id="expInfo">
+					<div class="line">
+						<label for="cardBox">Credit Card Number</label>
+						<input 
+							id="cardBox" 
+							name="cardNumber" 
+							pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" 
+							required 
+						/>
+					</div>
+					<div class="line">
+						<label for="monthList">Expiration Date</label>
+						<select id="monthList" name="cardMonth" required>
+							<option value="">--Month--</option>
+							<option value="1">January(01)</option>
+							<option value="2">February(02)</option>
+							<option value="3">March(03)</option>
+							<option value="4">April(04)</option>
+							<option value="5">May(05)</option>
+							<option value="6">June(06)</option>
+							<option value="7">July(07)</option>
+							<option value="8">August(08)</option>
+							<option value="9">September(09)</option>
+							<option value="10">October(10)</option>
+							<option value="11">November(11)</option>
+							<option value="12">December(12)</option>
+						</select>
+						<select id="yearList" name="cardYear" required>
+							<option value="">--Year--</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>
+							<option value="2023">2023</option>
+							<option value="2024">2024</option>
+							<option value="2025">2025</option>
+						</select>
+					</div>
+					<div class="line">
+						<label for="cscBox">CSC</label>
+						<input id="cscBox"
+							name="csc" 
+							type="text" 
+							placeholder="###" 
+							minlength="3"
+							pattern="^\d{3}$"
+							required />
+					</div>
+			<fieldset id="card">
+				<label class="cardLabel">
+					<input name="cCard"  value="amex" type="radio" required />
+					<image src="sb_amex.png">
+				</label>
+
+				<label class="cardLabel" >
+					<input name="cCard" value="discover" type="radio" />
+					<image src="sb_discover.png">
+				</label>
+				
+				<label class="cardLabel">
+					<input name="cCard" value="master" type="radio" />
+					<image src="sb_master.png">
+				</label>
+
+				<label class="cardLabel">
+					<input name="cCard" value="visa" type="radio" />
+					<image src="sb_visa.png" >
+				</label>
+				<label class="line" for="commBox">Now that we have your money, why should we choose you to be a hero?</label>
+				<textarea name="custExp" id="commBox"></textarea>
+			</fieldset>
+				</fieldset>
+				</div>
+				<div id="buttons">
+					<input type="submit" value="Submit My Survey" />
+					<input type="reset" value="Cancel" />
+				</div>
+
+		  </form>
+		</div>
+	</div>
+	</body>
+</html>

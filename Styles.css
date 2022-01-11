@@ -1,0 +1,179 @@
+@charset "utf-8";
+html {
+	position: relative;
+
+}
+body {
+	background-color: rgb(174,0,1);
+}
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+/*Banner*/
+
+div#banner {
+	height: 195px;
+	display: flex;
+	background-color:rgb(174,0,1);
+	padding: 0;
+	margin: 0;
+
+
+}
+div#banner_headings { /*h1 and h2 at top*/
+	z-index: 2;
+	transform: translate(-20%, 0);
+
+
+}
+#banner_headings h1 {
+	display: inline-block;
+	background-color: rgb(174,0,1);
+	transform: translate(0,0);
+	flex-grow:1;
+	height: 100px;
+	z-index: 2;
+	flex: 1 1 25%;
+	color: rgb(238,169,17);
+	font-size: 3em;
+}
+#banner_headings h2 {
+	height:95px;
+	flex-grow:1;
+	z-index:2;
+	transform: translate(75%, -50px);
+	flex: 1 1 25%;
+	color:rgb(238,169,17);
+	overflow-y: hidden;
+
+
+}
+#banner img {
+	flex-grow: 1;
+	height: 500px;
+	z-index:2;
+	transform: translate(15%, -100px);
+	width: 75%;
+	max-width: 1200px;
+	min-width: 600px;
+}
+/*Body*/
+#body {
+	display: flex;
+}
+/*Navigation*/
+#mainNav {
+	z-index: 3;
+	background-color: rgb(174,0,1);
+	display: flex;
+	flex-direction: col;
+	flex:2;
+}
+.sides {
+	border-radius: 20px;
+	
+
+}
+ul {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	
+}
+li {
+	text-decoration: none;
+	position: relative;
+	background-color: rgb(238,169,17);
+	height: 160px;
+	z-index: 3;
+	border-radius: 15px;
+	box-shadow: 2px 2px 4px;
+	text-align: center;
+	list-style-type: none;
+	margin-bottom: 5px;
+
+}
+a {
+	display: block;
+	padding: 60px 16px;
+	font-size: 2.6em;
+	text-decoration: none;
+	color: rgb(174,0,1);
+}
+span {
+	visibility: hidden;
+	border: 1px solid black;
+	color: black;
+	background-color: white;
+	position: absolute;
+	border-radius: 4px;
+	left:65%;
+	top: 30%;
+	transform: translate(-50%, -50%);
+}
+li:hover > span {
+	visibility: visible;
+
+}
+nav a:hover, span:hover + a {
+	color: rgb(1,1,1);
+}
+/*Center*/
+#center {
+	background-color: transparent;
+	flex: 7;
+	display: flex;
+	z-index:3;
+}
+article {
+	background-color: rgba(238,169,40,.85);
+	width: 50%;
+	height: 90%;
+	margin: 30px;
+	border-radius: 20px;
+}
+article h1 {
+	font-size: 2.4em;
+	color: rgb(130,0,0);
+	text-align: center;
+}
+p#intro {
+	font-size: 2.0em;
+	padding: 20px;
+	text-align: justify;
+	text-indent: 50px;
+}
+p#genos {
+	font-size: 1.6em;
+	padding: 15px;
+	padding-top: 0px;
+	text-align: justify;
+	text-indent: 50px;
+}
+#genosTag {
+	font-size: 1.3em;
+	text-align: justify;
+	text-indent: 50px;
+	transform: translate(0, -10px);
+	
+}
+img#leek {
+	width: 624px;
+	position: relative;
+	z-index: -30;
+	max-height: px;
+
+}
+/*NAV and RIGHT*/
+#rightSide {
+	flex: .7;
+	z-index: 1;
+	background-color: rgb(238,169,17);
+	display:none;
+
+}
+#rightSide li {
+	height: 200px;
+
+}

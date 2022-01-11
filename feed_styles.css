@@ -1,0 +1,140 @@
+@charset "utf-8";
+#center {
+	background-color: transparent;
+	flex: 7;
+	display: flex;
+	z-index: 3;
+}
+div.formRow {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 7px 0px;
+}
+div.formRow > * {
+	flex: 1 1 150px;
+}
+form#survey {
+	display: flex;
+	flex-flow: row wrap;
+}
+form#survey  > div {
+		flex: 1 1 40%;
+}
+form#survey > div > fieldset {
+	background-color: rgba(238,169,40,.85);
+	border-radius: 15px;
+	font-size: 1.1em;
+	padding: 10px;
+	box-shadow: 2px 2px 4px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+form#survey  > div#left {
+		margin-top:1px;
+}
+fieldset {
+	border: none;
+}
+/* Legend Styles */
+h1.feedHeads {
+	font-size: 2.2em;
+	color: rgb(238,169,17);
+	margin-left: 45px;
+	left: 45%;
+}
+h1#info {
+	margin-left:55%;
+}
+
+/* Text Area Styles */
+
+textarea {
+	margin-top: 10px;
+	height: 100px;
+	width: 95%;
+}
+h1.join {
+	text-align:center;
+}
+
+/* Spinner Styles */
+
+div.formRow > input#dineSpin {
+	flex: 0 0 50px;
+}
+
+/* Form Button Styles */
+
+
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(268, 199, 70);
+}
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid 
+input#cardBox:focus:valid, 
+input#cscBox:focus:valid, 
+input#ageBox:focus:valid,
+input#specBox:focus:valid{
+	background: rgb(238,169,40) url(rb_valid.png) bottom right/contain no-repeat;
+}
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phoneBox:focus:invalid,
+input#mail:focus:invalid, 
+input#cardBox:focus:invalid, 
+input#cscBox:focus:invalid, 
+input#ageBox:focus:invalid,
+input#specBox:focus:invalid{
+	background: rgba(174,0,1,.4) url(rb_invalid.png) bottom right/contain no-repeat;
+}
+/*Buttons*/
+input[type='submit'], input[type='reset'] {
+	display:inline-block;
+	background-color:rgba(238,169,40,.9);
+	bottom: 0%;
+	right: 0%;
+	z-index:100;
+	height: 42px;
+	width:175px;
+	font-size:1.2em;
+	padding: 4px;
+	border-radius:6px;
+	border: 3px solid rgba(174,0,1, .5);
+	box-shadow: 2px 1px 6px;
+}
+input[type='submit']:active, input[type='reset']:active {
+	background-color: rgb(220, 151,0);
+}
+input[type='submit']:hover, input[type='reset']:hover {
+	background-color: rgba(250,181,52,.9);
+}
+div#buttons {
+	text-align: center;
+	width: 100%;
+	flex: 1 1  100%;
+	margin-top:16px;
+	margin-left: 735px;
+}
+.line, #card {
+	float: left;
+	clear: left;
+	margin-top: 17px;
+}
+.line {
+	width: 100%;
+}
+.line input {
+	position: relative;
+	right:0px;
+}
+#fee {
+	margin-right:20px;
+}
+input#cscBox {
+	width: 30px;
+}
